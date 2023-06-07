@@ -1,0 +1,46 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hs"
+  ],
+  "author": "hirendra",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/tx": "^3.5.2",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@polkadot/api": "^10.7.3",
+    "@polkadot/keyring": "^12.2.1",
+    "@polkadot/util-crypto": "^12.2.1",
+    "@solana/web3.js": "^1.77.2",
+    "@truffle/hdwallet-provider": "^2.1.0",
+    "abi-decoder": "^2.4.0",
+    "assert": "^2.0.0",
+    "axios": "^0.27.2",
+    "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.1.1",
+    "bitcoinjs-message": "^2.2.0",
+    "Buffer": "^0.0.0",
+    "dotenv": "^16.0.3",
+    "dotnet": "^1.1.4",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-wallet": "^1.0.2",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "mongodb": "^4.10.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "shortid": "^2.2.16",
+    "tronweb": "^5.2.0",
+    "uuid": "^9.0.0",
+    "web3": "^1.9.0"
+  }
+}

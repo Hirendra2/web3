@@ -1,0 +1,599 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "addOwner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_ref_add",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_member",
+				"type": "address"
+			}
+		],
+		"name": "ownerreferral",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			}
+		],
+		"name": "removeOwner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_mod",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_member",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_ref_add",
+				"type": "address"
+			}
+		],
+		"name": "eventNewUser",
+		"type": "event"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	},
+	{
+		"inputs": [],
+		"name": "_owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "_owners",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "parent",
+				"type": "address"
+			}
+		],
+		"name": "getchaild",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_member",
+				"type": "address"
+			}
+		],
+		"name": "getListReferrals",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTotaluser",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "isMember",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastMember",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "memberChild",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "members",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "isExist",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "referrerID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "referredUsers",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "count",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "membersList",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "refer_info",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "level_1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_2",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_3",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_4",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_5",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_6",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_7",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_8",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_9",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_totalreferred",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "refer_info2",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "level_10",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_11",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_12",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_13",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_14",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_15",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_16",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_17",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_18",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_totalreferred",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "refer_info3",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "level_19",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_20",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_21",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_22",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_23",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_24",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_25",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_26",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_27",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_totalreferred",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "refer_info4",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "level_28",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_29",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_30",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_31",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_32",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "level_33",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_totalreferred",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "storauser",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "todayid",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "user",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "user_info",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "referred",
+				"type": "bool"
+			},
+			{
+				"internalType": "address",
+				"name": "referred_by",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
